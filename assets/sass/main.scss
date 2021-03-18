@@ -1,0 +1,109 @@
+@import "lib/vars";
+@import "lib/mixins";
+@import "lib/reboot";
+@import "lib/fontawesome/font-awesome";
+@import "lib/fontface";
+@import "lib/keyframes";
+
+* {
+  border: 1px solid pink;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  align-items: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.maya {
+  position: absolute;
+  width: 802px;
+  height: 1068px;
+  top: -50px;
+}
+.nube{
+  position: absolute;
+  width: 48%;
+  top: -54px;
+  right: 506px;
+}
+
+.luna{
+  position: absolute;
+  width: 48%;
+  top: -54px;
+  right: 506px;
+  display:none;
+}
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+//reloj//
+.reloj {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 9px 5px rgba(0, 0, 0, 0.25);
+  top: 20px;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  background: red;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.circle {
+  width: 24px;
+  height: 24px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -14px;
+  margin-top: -14px;
+  border-radius: 50%;
+}
+.secHand {
+  height: 2px;
+  border-radius: 1px;
+}
+.minHand {
+  height: 4px;
+  border-radius: 4px;
+}
+.hourHand {
+  height: 8px;
+  border-radius: 4px;
+  width: 35%;
+  left: 15%;
+}
+
